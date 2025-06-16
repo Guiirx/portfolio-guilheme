@@ -4,7 +4,7 @@ import { Profile } from '../models/profile';
 @Injectable({
   providedIn: 'root'
 })
-export class Profile {
+export class ProfileService {
 
   constructor() { }
 
