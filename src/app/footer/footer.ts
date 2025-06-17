@@ -10,5 +10,5 @@ import { Profile } from '../models/profile';
 })
 export class Footer {
  
-  constructor(private profile: Profile) { }
+ 
 }

@@ -10,5 +10,6 @@ import { Profile } from '../models/profile';
 })
 export class Home {
  
-  constructor(private profile: Profile) { }
+  
+  
 }

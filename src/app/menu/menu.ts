@@ -12,24 +12,20 @@ import { Menu } from '../models/menu';
 })
 export class MenuComponent {
 
-  constructor(private menu: Menu) { }
+  menuStatus: string = 'closed';
 
-   menuStatus: string = 'closed';
-
-   menuService: any;
-
-  menuItems?: Array<MenuService>
+  menuItems?: Array<Menu>
 
   ngOnInit() {
 
-    const menu = this.menuService.getItems();
-    
+    const menu = new MenuService().getMenu();
+
     this.menuItems = menu;
   }
 
   menuClick() {
 
-   this.menuStatus = (this.menuStatus == 'open' ? 'cloded' : 'open');
+    this.menuStatus = (this.menuStatus == 'open' ? 'cloded' : 'open');
 
   }
 }
