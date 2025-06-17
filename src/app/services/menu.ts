@@ -5,10 +5,12 @@ import { Menu } from '../models/menu';
   providedIn: 'root'
 })
 export class MenuService {
+name: any;
+url: any;
 
   constructor() { }
 
-  getItems(): Array<Menu> {
+  getMenu(): Array<Menu> {
 
     const menu: Array<Menu> = [
       {
