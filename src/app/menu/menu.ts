@@ -29,3 +29,5 @@ export class MenuComponent {
 
   }
 }
+
+export { Menu };

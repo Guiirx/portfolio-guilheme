@@ -5,8 +5,8 @@ nav {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-items: right;
-    height: 70px;
+    justify-content: right;
+    height: 70px
 }
 
 nav ul {
@@ -63,6 +63,4 @@ nav i {
     nav i {
         display: none;
     }
-
-
 }

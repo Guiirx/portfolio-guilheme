@@ -10,6 +10,4 @@ import { Profile } from '../models/profile';
 })
 export class Home {
  
-  
-  
 }
