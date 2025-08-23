@@ -50,7 +50,8 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin: 15px 0;
+    margin: 10px 0;
+    width: 10%;
     justify-content: space-evenly;
 }
 
@@ -59,15 +60,16 @@
     align-items: center;
     justify-content: center;
     padding: 15px;
-    min-width: 170px;
-    border-radius: 35px;
+    min-width: 180px;
+    border-radius: 40px;
     margin: 0 15px 15px;
     font-size: var(--font-size-4);
-    font-weight: 700;
+    font-weight: 600;
     background: var(--color-pink-3);
     color: #fff;
     text-wrap: nowrap;
 }
+
 
 .banner .box .buttons a:hover {
     background: var(--color-blue-2);
@@ -116,9 +118,7 @@
     font-weight: 400px;
 }
 
-
 /* box buttons */
-
 
 .box .buttons a {
     display: flex;
@@ -141,8 +141,78 @@
     background: var(--color-purple-1);
     color: #fff;
     size: 450%;
+}
 
+/* box areas */
 
+.areas {
+  padding: 40px 20px;
+  background: #f8f9fc;
+  text-align: center;
+}
+
+.areas h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Container das áreas */
+:root {
+  --color-purple-1: #8e44ad; /* Substitui pelo valor que você já usa */
+}
+
+/* Container geral */
+.caixas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+/* Cada categoria */
+.categoria {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+/* Título da categoria */
+.categoria h2 {
+  text-align: center;
+  color: var(--color-purple-1);
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Caixinhas */
+.caixa {
+  background: var(--color-purple-1); /* Cor da variável */
+  color: #fff; /* Texto branco */
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Efeito flutuar no hover */
+.caixa:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+  background: #9b59b6; /* Leve clareamento da cor no hover */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .caixas-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (min-width: 768px) {
