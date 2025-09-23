@@ -207,7 +207,54 @@
   background: #9b59b6; /* Leve clareamento da cor no hover */
 }
 
-/* Responsivo */
+/* box contact */
+
+.contact {
+    background: var(--color-blue-2);
+}
+
+.contact .box {
+    max-width: 880px;
+}
+
+.contact .box h2,
+.contact .box h3 {
+    color: #fff
+}
+
+.contact .box .contacts a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: var(--color-pink-3);
+    height: 50px;
+    color: #fff;
+    border-radius: 35px;
+    min-width: 200px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+.contact .box  .contacts a:hover {
+    background: #9fbeee;
+}
+.contact .box ,.contacts a span {
+    font-size: 35px;
+    margin-right: 5px;
+}
+
+.contact .box .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 25px 0;
+}
+
+.contact .box .contacts a svg {
+    width: 30px;
+    margin-right: 5px;
+}
+
 @media (max-width: 768px) {
   .caixas-container {
     flex-direction: column;

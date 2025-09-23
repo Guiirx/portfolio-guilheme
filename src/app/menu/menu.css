@@ -47,6 +47,8 @@ nav i {
     cursor: pointer;
 }
 
+
+
 @media (min-width: 768) {
     nav {
         justify-content: center;
