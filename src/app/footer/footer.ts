@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Profile } from '../models/profile';
+import { ProfileService } from '../services/profile';
 
 @Component({
   selector: 'app-footer',
@@ -9,6 +10,8 @@ import { Profile } from '../models/profile';
   styleUrl: './footer.css'
 })
 export class Footer {
+
+  constructor(private profileService: ProfileService) { }
  
  
 }

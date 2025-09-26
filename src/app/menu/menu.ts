@@ -12,6 +12,8 @@ import { Menu } from '../models/menu';
 })
 export class MenuComponent {
 
+  constructor(private menuService: MenuService) { }
+
   menuStatus: string = 'closed';
 
   menuItems?: Array<Menu>
