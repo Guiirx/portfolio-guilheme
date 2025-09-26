@@ -12,6 +12,14 @@ import { ProfileService } from '../services/profile';
 export class Footer {
 
   constructor(private profileService: ProfileService) { }
- 
- 
+
+  profile?: Profile;
+  date: Date = new Date();
+
+  ngOnInit() { 
+
+    this.profile = this.profileService.getProfile();
+
+
+  }
 }

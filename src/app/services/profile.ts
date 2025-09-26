@@ -15,7 +15,6 @@ export class ProfileService {
       name: 'Yasmin Cabral',
       whatsApp: 'https://api.whatsapp.com/send?phone=5583986780591&text=Ol%C3%A1,%20estou%20no%20seu%20site%20%C3%A9%20gostaria%20de%20me%20consultar',
     }
-
     return profile;
   }
 }
