@@ -209,52 +209,66 @@
 
 /* box contact */
 
-.contact {
-    background: var(--color-blue-2);
-}
-
-.contact .box {
-    max-width: 880px;
-}
-
-.contact .box h2,
-.contact .box h3 {
-    color: #333;
+.contact .box .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 25px 0;
 }
 
 .contact .box .contacts a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    gap: 8px;
+    padding: 12px 20px;
     background: var(--color-pink-3);
-    height: 50px;
     color: #fff;
     border-radius: 35px;
-    min-width: 200px;
     font-weight: 600;
-    margin: 10px 0;
+    min-width: 200px;
+    height: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
-.contact .box  .contacts a:hover {
+
+/* Hover suave, sem aumento 3D */
+.contact .box .contacts a:hover {
     background: #9fbeee;
-}
-.contact .box ,.contacts a span {
-    font-size: 35px;
-    margin-right: 5px;
+    box-shadow: 0 4px 15px rgba(159, 190, 238, 0.35);
 }
 
-.contact .box .contacts {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 25px 0;
-    
+/* Brilho passando no hover */
+.contact .box .contacts a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-25deg);
+    transition: left 0.6s ease;
 }
 
+.contact .box .contacts a:hover::after {
+    left: 150%;
+}
+
+/* Ícones e texto */
 .contact .box .contacts a svg {
-    width: 30px;
-    margin-right: 5px;
+    width: 28px;
+    height: 28px;
 }
+
+.contact .box .contacts a span {
+    font-size: 1.1rem;
+}
+
+
 
 @media (max-width: 768px) {
   .caixas-container {
